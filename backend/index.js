@@ -3,7 +3,7 @@ const redis = require('redis');
 
 const app = express();
 const port = process.env.PORT || 3000;
-const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+const redisUrl = process.env.REDIS_URL || 'redis://cache:6379';
 
 app.use(express.json());
 
